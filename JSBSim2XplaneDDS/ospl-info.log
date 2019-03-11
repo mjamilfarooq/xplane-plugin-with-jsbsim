@@ -1,0 +1,2568 @@
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/666755873
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/666912441
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/676926920
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Daemon: Locking not defined using default value disabled
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/lockPages/u_spliced.c/109/0/677064817
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Lease Manager for Participant 0x24cca30 started
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : watchdog 7fa3f1647700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/677858194
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Configuration> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/677899578
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Resend Manager for Participant 0x24cca30 started
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : resendManager 7fa3f1636700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/677868069
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Arguments> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/678100982
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/678205346
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/678229655
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/678251074
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <FailureAction> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/678272879
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Configuration> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/678302082
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Arguments> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/678322957
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/678342905
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/678362413
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/678381964
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Taking default for <FailureAction> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/678401458
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : The C&M Service thread is started.
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : OSPL C&M Command Manager 7fa3f1504700
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/678602137
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Started service durability with args "durability" "file:///home/sim-paf/OpenSplice/install/HDE/x86_64.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/678787716
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Started service networking with args "networking" "file:///home/sim-paf/OpenSplice/install/HDE/x86_64.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/678932914
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : service 'durability': Locking disabled
+Node        : sim-paf-desktop
+Process     : durability <3514>
+Thread      : main thread 7fb3214d2700
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/685140956
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : service 'networking': Locking disabled
+Node        : sim-paf-desktop
+Process     : networking <3515>
+Thread      : main thread 7f0d2e6d4700
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/685563238
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Lease Manager for Participant 0x1299000 started
+Node        : sim-paf-desktop
+Process     : durability <3514>
+Thread      : watchdog 7fb3214ff700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/685781622
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Resend Manager for Participant 0x1299000 started
+Node        : sim-paf-desktop
+Process     : durability <3514>
+Thread      : resendManager 7fb3214ee700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/685727113
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Resend Manager for Participant 0x1660f20 started
+Node        : sim-paf-desktop
+Process     : networking <3515>
+Thread      : resendManager 7f0d2e6f2700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/686346687
+========================================================================================
+Report      : WARNING
+Date        : Tue May 28 09:34:44 2013
+Description : ignoring invalid networking address eth0
+Node        : sim-paf-desktop
+Process     : networking <3515>
+Thread      : main thread 7f0d2e6d4700
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/166/0/687297358
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : Lease Manager for Participant 0x1660f20 started
+Node        : sim-paf-desktop
+Process     : networking <3515>
+Thread      : watchdog 7f0d2e703700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/687988126
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:44 2013
+Description : my NodeId = 0x28f2bba7
+Node        : sim-paf-desktop
+Process     : networking <3515>
+Thread      : main thread 7f0d2e6d4700
+Internals   : V5.5.1OSS/networking: nw_controllerInitialize/nw_controller.c/786/0/688659705
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:45 2013
+Description : Durability identification is: 674882041
+Node        : sim-paf-desktop
+Process     : durability <3514>
+Thread      : main thread 7fb3214d2700
+Internals   : V5.5.1OSS/DurabilityService/d_durability.c/459/0/100289517
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:34:51 2013
+Description : Persistence not enabled!
+Node        : sim-paf-desktop
+Process     : durability <3514>
+Thread      : main thread 7fb3214d2700
+Internals   : V5.5.1OSS/DurabilityService/d_groupLocalListener.c/2796/0/404493868
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:51 2013
+Description : Resend Manager for Participant 0x1660f20 stopped
+Node        : sim-paf-desktop
+Process     : networking <3515>
+Thread      : resendManager 7f0d2e6f2700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/124670712
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:51 2013
+Description : Lease Manager for Participant 0x1660f20 stopped
+Node        : sim-paf-desktop
+Process     : networking <3515>
+Thread      : watchdog 7f0d2e703700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/124673075
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:53 2013
+Description : Resend Manager for Participant 0x1299000 stopped
+Node        : sim-paf-desktop
+Process     : durability <3514>
+Thread      : resendManager 7fb3214ee700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/216038784
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:53 2013
+Description : Lease Manager for Participant 0x1299000 stopped
+Node        : sim-paf-desktop
+Process     : durability <3514>
+Thread      : watchdog 7fb3214ff700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/216046015
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:54 2013
+Description : The C&M Service thread is notified to terminate.
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/v_splicedCAndMCommandDispatcherQuit/v_spliced.c/2010/0/292686028
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:54 2013
+Description : The C&M Service thread is stopped.
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : OSPL C&M Command Manager 7fa3f1504700
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2062/0/292846427
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:54 2013
+Description : Resend Manager for Participant 0x24cca30 stopped
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : resendManager 7fa3f1636700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/292868808
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:54 2013
+Description : Lease Manager for Participant 0x24cca30 stopped
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : watchdog 7fa3f1647700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/292868610
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:41:54 2013
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : sim-paf-desktop
+Process     : spliced <3504>
+Thread      : main thread 7fa3f1619700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/749/0/296206721
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/471380957
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/471551223
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/488183147
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Daemon: Locking not defined using default value disabled
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/lockPages/u_spliced.c/109/0/488332997
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Resend Manager for Participant 0x23a3a30 started
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : resendManager 7ffae458f700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/489174121
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Lease Manager for Participant 0x23a3a30 started
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : watchdog 7ffae45a0700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/489174511
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Configuration> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/489213568
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Arguments> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/489267807
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/489293566
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/489315150
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/489335560
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <FailureAction> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/489356947
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Configuration> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/489386315
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Arguments> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/489406612
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/489426699
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/489446239
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/489466197
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Taking default for <FailureAction> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/489488168
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : The C&M Service thread is started.
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : OSPL C&M Command Manager 7ffae445d700
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/489887418
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Started service durability with args "durability" "file:///home/sim-paf/OpenSplice/install/HDE/x86_64.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/490218430
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Started service networking with args "networking" "file:///home/sim-paf/OpenSplice/install/HDE/x86_64.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/490376651
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : service 'durability': Locking disabled
+Node        : sim-paf-desktop
+Process     : durability <3878>
+Thread      : main thread 7fa539ae6700
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/492225314
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : service 'networking': Locking disabled
+Node        : sim-paf-desktop
+Process     : networking <3879>
+Thread      : main thread 7ff0d93ce700
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/492509125
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Resend Manager for Participant 0x18c4000 started
+Node        : sim-paf-desktop
+Process     : durability <3878>
+Thread      : resendManager 7fa539b02700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/493060512
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Lease Manager for Participant 0x18c4000 started
+Node        : sim-paf-desktop
+Process     : durability <3878>
+Thread      : watchdog 7fa539b13700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/493067683
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Resend Manager for Participant 0x1b75f20 started
+Node        : sim-paf-desktop
+Process     : networking <3879>
+Thread      : resendManager 7ff0d93ec700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/493312394
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : Lease Manager for Participant 0x1b75f20 started
+Node        : sim-paf-desktop
+Process     : networking <3879>
+Thread      : watchdog 7ff0d93fd700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/493712276
+========================================================================================
+Report      : WARNING
+Date        : Tue May 28 09:43:12 2013
+Description : ignoring invalid networking address eth0
+Node        : sim-paf-desktop
+Process     : networking <3879>
+Thread      : main thread 7ff0d93ce700
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/166/0/494507951
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:12 2013
+Description : my NodeId = 0x1d773e35
+Node        : sim-paf-desktop
+Process     : networking <3879>
+Thread      : main thread 7ff0d93ce700
+Internals   : V5.5.1OSS/networking: nw_controllerInitialize/nw_controller.c/786/0/495434766
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:13 2013
+Description : Durability identification is: 485009601
+Node        : sim-paf-desktop
+Process     : durability <3878>
+Thread      : main thread 7fa539ae6700
+Internals   : V5.5.1OSS/DurabilityService/d_durability.c/459/0/106820411
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:43:19 2013
+Description : Persistence not enabled!
+Node        : sim-paf-desktop
+Process     : durability <3878>
+Thread      : main thread 7fa539ae6700
+Internals   : V5.5.1OSS/DurabilityService/d_groupLocalListener.c/2796/0/110876908
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:47:57 2013
+Description : Resend Manager for Participant 0x1b75f20 stopped
+Node        : sim-paf-desktop
+Process     : networking <3879>
+Thread      : resendManager 7ff0d93ec700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/827318064
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:47:57 2013
+Description : Lease Manager for Participant 0x1b75f20 stopped
+Node        : sim-paf-desktop
+Process     : networking <3879>
+Thread      : watchdog 7ff0d93fd700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/827325832
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:01 2013
+Description : Resend Manager for Participant 0x18c4000 stopped
+Node        : sim-paf-desktop
+Process     : durability <3878>
+Thread      : resendManager 7fa539b02700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/216754335
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:01 2013
+Description : Lease Manager for Participant 0x18c4000 stopped
+Node        : sim-paf-desktop
+Process     : durability <3878>
+Thread      : watchdog 7fa539b13700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/216754671
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:02 2013
+Description : The C&M Service thread is notified to terminate.
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/v_splicedCAndMCommandDispatcherQuit/v_spliced.c/2010/0/301414361
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:02 2013
+Description : The C&M Service thread is stopped.
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : OSPL C&M Command Manager 7ffae445d700
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2062/0/301556260
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:02 2013
+Description : Lease Manager for Participant 0x23a3a30 stopped
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : watchdog 7ffae45a0700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/301611292
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:02 2013
+Description : Resend Manager for Participant 0x23a3a30 stopped
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : resendManager 7ffae458f700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/301603810
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:02 2013
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : sim-paf-desktop
+Process     : spliced <3868>
+Thread      : main thread 7ffae4572700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/749/0/304841220
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/20044393
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/20213233
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/31664910
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Daemon: Locking not defined using default value disabled
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/lockPages/u_spliced.c/109/0/31796709
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Lease Manager for Participant 0x10fba30 started
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : watchdog 7f2f96ef0700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/32430926
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Resend Manager for Participant 0x10fba30 started
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : resendManager 7f2f96edf700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/32456345
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Configuration> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/32476007
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Arguments> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/32720287
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/32794217
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/32844325
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/32892259
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <FailureAction> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/32941508
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Configuration> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/33009004
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Arguments> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/33055715
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/33100268
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/33150592
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/33196108
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Taking default for <FailureAction> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/33240601
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : The C&M Service thread is started.
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : OSPL C&M Command Manager 7f2f96dad700
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/33659494
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Started service durability with args "durability" "file:///home/sim-paf/OpenSplice/install/HDE/x86_64.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/34017851
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Started service networking with args "networking" "file:///home/sim-paf/OpenSplice/install/HDE/x86_64.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/34214664
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : service 'durability': Locking disabled
+Node        : sim-paf-desktop
+Process     : durability <4040>
+Thread      : main thread 7f2b8f1c4700
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/36220869
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : service 'networking': Locking disabled
+Node        : sim-paf-desktop
+Process     : networking <4041>
+Thread      : main thread 7f7c23137700
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/36544402
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Resend Manager for Participant 0x95b000 started
+Node        : sim-paf-desktop
+Process     : durability <4040>
+Thread      : resendManager 7f2b8f1e0700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/37061569
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Lease Manager for Participant 0x95b000 started
+Node        : sim-paf-desktop
+Process     : durability <4040>
+Thread      : watchdog 7f2b8f1f1700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/37153019
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Resend Manager for Participant 0x23aef20 started
+Node        : sim-paf-desktop
+Process     : networking <4041>
+Thread      : resendManager 7f7c23155700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/39255517
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Lease Manager for Participant 0x23aef20 started
+Node        : sim-paf-desktop
+Process     : networking <4041>
+Thread      : watchdog 7f7c23166700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/39317013
+========================================================================================
+Report      : WARNING
+Date        : Tue May 28 09:48:07 2013
+Description : ignoring invalid networking address eth0
+Node        : sim-paf-desktop
+Process     : networking <4041>
+Thread      : main thread 7f7c23137700
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/166/0/40138380
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : my NodeId = 0x25ff7dd
+Node        : sim-paf-desktop
+Process     : networking <4041>
+Thread      : main thread 7f7c23137700
+Internals   : V5.5.1OSS/networking: nw_controllerInitialize/nw_controller.c/786/0/42019145
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:07 2013
+Description : Durability identification is: 29535924
+Node        : sim-paf-desktop
+Process     : durability <4040>
+Thread      : main thread 7f2b8f1c4700
+Internals   : V5.5.1OSS/DurabilityService/d_durability.c/459/0/753143015
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 09:48:13 2013
+Description : Persistence not enabled!
+Node        : sim-paf-desktop
+Process     : durability <4040>
+Thread      : main thread 7f2b8f1c4700
+Internals   : V5.5.1OSS/DurabilityService/d_groupLocalListener.c/2796/0/757073715
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:34 2013
+Description : Resend Manager for Participant 0x23aef20 stopped
+Node        : sim-paf-desktop
+Process     : networking <4041>
+Thread      : resendManager 7f7c23155700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/583412157
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:34 2013
+Description : Lease Manager for Participant 0x23aef20 stopped
+Node        : sim-paf-desktop
+Process     : networking <4041>
+Thread      : watchdog 7f7c23166700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/583415712
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:37 2013
+Description : Resend Manager for Participant 0x95b000 stopped
+Node        : sim-paf-desktop
+Process     : durability <4040>
+Thread      : resendManager 7f2b8f1e0700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/953611002
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:37 2013
+Description : Lease Manager for Participant 0x95b000 stopped
+Node        : sim-paf-desktop
+Process     : durability <4040>
+Thread      : watchdog 7f2b8f1f1700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/953615768
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:38 2013
+Description : The C&M Service thread is notified to terminate.
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/v_splicedCAndMCommandDispatcherQuit/v_spliced.c/2010/0/978840232
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:38 2013
+Description : Resend Manager for Participant 0x10fba30 stopped
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : resendManager 7f2f96edf700
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/978972808
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:38 2013
+Description : Lease Manager for Participant 0x10fba30 stopped
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : watchdog 7f2f96ef0700
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/979009223
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:38 2013
+Description : The C&M Service thread is stopped.
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : OSPL C&M Command Manager 7f2f96dad700
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2062/0/978995284
+========================================================================================
+Report      : INFO
+Date        : Tue May 28 10:15:38 2013
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : sim-paf-desktop
+Process     : spliced <4030>
+Thread      : main thread 7f2f96ec2700
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/749/0/982290100
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 15:15:06 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "The default Domain"
+Node        : sim-paf-desktop
+Process     : spliced <18293>
+Thread      : main thread f74199c0
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/556491029
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 15:15:06 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "The default Domain"
+Node        : sim-paf-desktop
+Process     : spliced <18293>
+Thread      : main thread f74199c0
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/556587164
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 15:15:06 2013
+Description : No configuration specified for this domain.
+              Therefore the default configuration will be used.
+Domain      : "The default Domain"
+Node        : sim-paf-desktop
+Process     : spliced <18293>
+Thread      : main thread f74199c0
+Internals   : V5.5.1OSS/Create Domain Admin (u_domainNew)/u_domain.c/607/0/566229243
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 15:15:06 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "The default Domain"
+Node        : sim-paf-desktop
+Process     : spliced <18293>
+Thread      : main thread f74199c0
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/566389771
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 15:15:06 2013
+Description : Resend Manager for Participant 0x86e90a0 started
+Node        : sim-paf-desktop
+Process     : spliced <18293>
+Thread      : resendManager f7764b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/566666859
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 15:15:06 2013
+Description : Lease Manager for Participant 0x86e90a0 started
+Node        : sim-paf-desktop
+Process     : spliced <18293>
+Thread      : watchdog f7775b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/566712454
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 15:15:06 2013
+Description : The C&M Service thread is started.
+Node        : sim-paf-desktop
+Process     : spliced <18293>
+Thread      : OSPL C&M Command Manager f687eb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/567026531
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/23823651
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/24006112
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/39549399
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Daemon: Locking not defined using default value disabled
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/lockPages/u_spliced.c/109/0/39745911
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Lease Manager for Participant 0x9a42f98 started
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : watchdog f770ab40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/40088005
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Resend Manager for Participant 0x9a42f98 started
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : resendManager f76f9b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/40086865
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Configuration> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/40225813
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Arguments> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/40259149
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/40290547
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/40323350
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/40347825
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <FailureAction> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/40373015
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Configuration> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/40409866
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Arguments> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/40434204
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/40461181
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/40485378
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/40509057
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Taking default for <FailureAction> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/40532415
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : The C&M Service thread is started.
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : OSPL C&M Command Manager f69ffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/41148066
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Started service durability with args "durability" "file:///media/software/HDE/x86.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/41375310
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Started service networking with args "networking" "file:///media/software/HDE/x86.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/41531485
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : service 'durability': Locking disabled
+Node        : sim-paf-desktop
+Process     : durability <22125>
+Thread      : main thread f74539c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/42655801
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : service 'networking': Locking disabled
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : main thread f73f16c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/42699399
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Lease Manager for Participant 0x91c9078 started
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : watchdog f776ab40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/43233671
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Resend Manager for Participant 0x91c9078 started
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : resendManager f7759b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/43234643
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Lease Manager for Participant 0x9d69108 started
+Node        : sim-paf-desktop
+Process     : durability <22125>
+Thread      : watchdog f77afb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/44619021
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Resend Manager for Participant 0x9d69108 started
+Node        : sim-paf-desktop
+Process     : durability <22125>
+Thread      : resendManager f779eb40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/44684046
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:15:28 2013
+Description : error calling getaddrinfo("eth0"): Temporary failure in name resolution
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : main thread f73f16c0
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/140/0/45486971
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:15:28 2013
+Description : ignoring invalid networking address eth0
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : main thread f73f16c0
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/166/0/45518054
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : my NodeId = 0x29e8ba4
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : main thread f73f16c0
+Internals   : V5.5.1OSS/networking: nw_controllerInitialize/nw_controller.c/786/0/46896381
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:28 2013
+Description : Durability identification is: 36757216
+Node        : sim-paf-desktop
+Process     : durability <22125>
+Thread      : main thread f74539c0
+Internals   : V5.5.1OSS/DurabilityService/d_durability.c/459/0/359700958
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:15:42 2013
+Description : Persistence not enabled!
+Node        : sim-paf-desktop
+Process     : durability <22125>
+Thread      : main thread f74539c0
+Internals   : V5.5.1OSS/DurabilityService/d_groupLocalListener.c/2796/0/668776012
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:33:28 2013
+Description : No heartbeats received from Node 0x14401a08 (address 192.168.8.11)
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : Channels/Channel[@name='Reliable'] f6f89b40
+Internals   : V5.5.1OSS/networking: reliable protocol/nw_plugSendChannel.c/2599/0/794080832
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:33:28 2013
+Description : Node 0x14401a08 (address 192.168.8.11) not responding or no heartbeats received, removing it from the reliable protocol
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : Channels/Channel[@name='Reliable'] f6f89b40
+Internals   : V5.5.1OSS/networking: reliable protocol/nw_plugSendChannel.c/1793/0/794152780
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:34:28 2013
+Description : Missed heartbeat for node 205612987
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : OSPL Garbage Collector f6bffb40
+Internals   : V5.5.1OSS/v_spliced/v_spliced.c/2162/0/122031633
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:52 2013
+Description : Resend Manager for Participant 0x91c9078 stopped
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : resendManager f7759b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/523032482
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:52 2013
+Description : Lease Manager for Participant 0x91c9078 stopped
+Node        : sim-paf-desktop
+Process     : networking <22126>
+Thread      : watchdog f776ab40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/523041271
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:54 2013
+Description : Resend Manager for Participant 0x9d69108 stopped
+Node        : sim-paf-desktop
+Process     : durability <22125>
+Thread      : resendManager f779eb40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/571626994
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:54 2013
+Description : Lease Manager for Participant 0x9d69108 stopped
+Node        : sim-paf-desktop
+Process     : durability <22125>
+Thread      : watchdog f77afb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/571650267
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:55 2013
+Description : The C&M Service thread is notified to terminate.
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/v_splicedCAndMCommandDispatcherQuit/v_spliced.c/2010/0/585880192
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:55 2013
+Description : The C&M Service thread is stopped.
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : OSPL C&M Command Manager f69ffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2062/0/586045966
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:55 2013
+Description : Lease Manager for Participant 0x9a42f98 stopped
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : watchdog f770ab40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/586045877
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:55 2013
+Description : Resend Manager for Participant 0x9a42f98 stopped
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : resendManager f76f9b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/586045898
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:39:55 2013
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : sim-paf-desktop
+Process     : spliced <22115>
+Thread      : main thread f73ae9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/749/0/587644261
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/167450226
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/167637323
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/183364545
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Daemon: Locking not defined using default value disabled
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/lockPages/u_spliced.c/109/0/183538008
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Resend Manager for Participant 0x8fd1f98 started
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : resendManager f76e4b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/183860818
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Lease Manager for Participant 0x8fd1f98 started
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : watchdog f76f5b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/183867904
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Configuration> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/183966537
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Arguments> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/183999708
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/184030653
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/184056232
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/184081712
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <FailureAction> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/184105936
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Configuration> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/184143031
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Arguments> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/184167152
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/184190518
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/184213912
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/184237100
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Taking default for <FailureAction> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/184260304
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : The C&M Service thread is started.
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : OSPL C&M Command Manager f6bffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/184826523
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Started service durability with args "durability" "file:///media/software/HDE/x86.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/185258753
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Started service networking with args "networking" "file:///media/software/HDE/x86.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/185371223
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : service 'durability': Locking disabled
+Node        : sim-paf-desktop
+Process     : durability <23437>
+Thread      : main thread f73b79c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/186467427
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : service 'networking': Locking disabled
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : main thread f73f56c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/186490093
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Resend Manager for Participant 0x98f6078 started
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : resendManager f775db40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/186956345
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Lease Manager for Participant 0x98f6078 started
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : watchdog f776eb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/186983836
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Resend Manager for Participant 0x962c108 started
+Node        : sim-paf-desktop
+Process     : durability <23437>
+Thread      : resendManager f7702b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/187915966
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Lease Manager for Participant 0x962c108 started
+Node        : sim-paf-desktop
+Process     : durability <23437>
+Thread      : watchdog f7713b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/187948406
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:40:10 2013
+Description : error calling getaddrinfo("eth0"): Temporary failure in name resolution
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : main thread f73f56c0
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/140/0/188107813
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:40:10 2013
+Description : ignoring invalid networking address eth0
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : main thread f73f56c0
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/166/0/188124300
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : my NodeId = 0xb29468a
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : main thread f73f56c0
+Internals   : V5.5.1OSS/networking: nw_controllerInitialize/nw_controller.c/786/0/189293008
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:10 2013
+Description : Durability identification is: 180554133
+Node        : sim-paf-desktop
+Process     : durability <23437>
+Thread      : main thread f73b79c0
+Internals   : V5.5.1OSS/DurabilityService/d_durability.c/459/0/201241680
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:40:24 2013
+Description : Persistence not enabled!
+Node        : sim-paf-desktop
+Process     : durability <23437>
+Thread      : main thread f73b79c0
+Internals   : V5.5.1OSS/DurabilityService/d_groupLocalListener.c/2796/0/510759682
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:42:04 2013
+Description : No heartbeats received from Node 0x14401a08 (address 192.168.8.11)
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : Channels/Channel[@name='Reliable'] f6d6eb40
+Internals   : V5.5.1OSS/networking: reliable protocol/nw_plugSendChannel.c/2599/0/284114097
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:42:04 2013
+Description : Node 0x14401a08 (address 192.168.8.11) not responding or no heartbeats received, removing it from the reliable protocol
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : Channels/Channel[@name='Reliable'] f6d6eb40
+Internals   : V5.5.1OSS/networking: reliable protocol/nw_plugSendChannel.c/1793/0/284191925
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:42:04 2013
+Description : No heartbeats received from Node 0x2947f38d (address 192.168.8.7)
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : Channels/Channel[@name='Reliable'] f6d6eb40
+Internals   : V5.5.1OSS/networking: reliable protocol/nw_plugSendChannel.c/2599/0/284202257
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:42:04 2013
+Description : Node 0x2947f38d (address 192.168.8.7) not responding or no heartbeats received, removing it from the reliable protocol
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : Channels/Channel[@name='Reliable'] f6d6eb40
+Internals   : V5.5.1OSS/networking: reliable protocol/nw_plugSendChannel.c/1793/0/284209529
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:43:01 2013
+Description : Missed heartbeat for node 205612987
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : OSPL Garbage Collector f69ffb40
+Internals   : V5.5.1OSS/v_spliced/v_spliced.c/2162/0/207034710
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:43:01 2013
+Description : Missed heartbeat for node 605952274
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : OSPL Garbage Collector f69ffb40
+Internals   : V5.5.1OSS/v_spliced/v_spliced.c/2162/0/227265180
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:31 2013
+Description : Resend Manager for Participant 0x98f6078 stopped
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : resendManager f775db40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/516153693
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:31 2013
+Description : Lease Manager for Participant 0x98f6078 stopped
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : watchdog f776eb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/516157699
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:34 2013
+Description : Resend Manager for Participant 0x962c108 stopped
+Node        : sim-paf-desktop
+Process     : durability <23437>
+Thread      : resendManager f7702b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/240967652
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:34 2013
+Description : Lease Manager for Participant 0x962c108 stopped
+Node        : sim-paf-desktop
+Process     : durability <23437>
+Thread      : watchdog f7713b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/240970955
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:35 2013
+Description : The C&M Service thread is notified to terminate.
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/v_splicedCAndMCommandDispatcherQuit/v_spliced.c/2010/0/292952743
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:35 2013
+Description : Resend Manager for Participant 0x8fd1f98 stopped
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : resendManager f76e4b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/293065667
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:35 2013
+Description : The C&M Service thread is stopped.
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : OSPL C&M Command Manager f6bffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2062/0/293085505
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:35 2013
+Description : Lease Manager for Participant 0x8fd1f98 stopped
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : watchdog f76f5b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/293086051
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:35 2013
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : sim-paf-desktop
+Process     : spliced <23427>
+Thread      : main thread f73999c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/749/0/294503474
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/283126532
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/283318237
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "MirageIFSim"
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/301457507
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Daemon: Locking not defined using default value disabled
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/lockPages/u_spliced.c/109/0/301632701
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Resend Manager for Participant 0x9adff98 started
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : resendManager f76d6b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/302224411
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Lease Manager for Participant 0x9adff98 started
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : watchdog f76e7b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/302421156
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Configuration> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/302513403
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Arguments> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/302552883
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/302579212
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/302608170
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/302632416
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <FailureAction> parameter service durability
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/302656118
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Configuration> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/302691613
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Arguments> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/302714674
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/302736995
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/302759151
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/302781111
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Taking default for <FailureAction> parameter service networking
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/302803292
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : The C&M Service thread is started.
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : OSPL C&M Command Manager f69ffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/303276699
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Started service durability with args "durability" "file:///media/software/HDE/x86.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/303636121
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Started service networking with args "networking" "file:///media/software/HDE/x86.linux2.6/etc/config/MirageIFSim.xml"
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/303752614
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : service 'durability': Locking disabled
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : main thread f74449c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/304838827
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : service 'networking': Locking disabled
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/304912624
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Lease Manager for Participant 0x95af108 started
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : watchdog f77a0b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/305258262
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Resend Manager for Participant 0x8a08078 started
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : resendManager f77a4b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/305334689
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Resend Manager for Participant 0x95af108 started
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : resendManager f778fb40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/305646658
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Lease Manager for Participant 0x8a08078 started
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : watchdog f77b5b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/305683073
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : my NodeId = 0x1238a2a5
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: nw_controllerInitialize/nw_controller.c/786/0/307350573
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:43:55 2013
+Description : Durability identification is: 296418982
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : main thread f74449c0
+Internals   : V5.5.1OSS/DurabilityService/d_durability.c/459/0/620707150
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:44:01 2013
+Description : Persistence not enabled!
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : main thread f74449c0
+Internals   : V5.5.1OSS/DurabilityService/d_groupLocalListener.c/2796/0/625341942
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:51:14 2013
+Description : Caught termination request: 0. Please use 'ospl stop' for termination.
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : durability f7042b40
+Internals   : V5.5.1OSS/serviceTermHandler/u_service.c/54/0/259997366
+========================================================================================
+Report      : WARNING
+Date        : Thu May 30 16:51:14 2013
+Description : Caught termination request: 0. Please use 'ospl stop' for termination.
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : resendManager f77a4b40
+Internals   : V5.5.1OSS/serviceTermHandler/u_service.c/54/0/260046256
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:16 2013
+Description : Resend Manager for Participant 0x8a08078 stopped
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : resendManager f77a4b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/813463663
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:16 2013
+Description : Lease Manager for Participant 0x8a08078 stopped
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : watchdog f77b5b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/813473270
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:18 2013
+Description : Resend Manager for Participant 0x95af108 stopped
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : resendManager f778fb40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/667639196
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:18 2013
+Description : Lease Manager for Participant 0x95af108 stopped
+Node        : sim-paf-desktop
+Process     : durability <24508>
+Thread      : watchdog f77a0b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/667645909
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:19 2013
+Description : The C&M Service thread is notified to terminate.
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/v_splicedCAndMCommandDispatcherQuit/v_spliced.c/2010/0/718180695
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:19 2013
+Description : Resend Manager for Participant 0x9adff98 stopped
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : resendManager f76d6b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/718320107
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:19 2013
+Description : Lease Manager for Participant 0x9adff98 stopped
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : watchdog f76e7b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/718353367
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:19 2013
+Description : The C&M Service thread is stopped.
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : OSPL C&M Command Manager f69ffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2062/0/718356893
+========================================================================================
+Report      : INFO
+Date        : Thu May 30 16:51:19 2013
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : sim-paf-desktop
+Process     : spliced <24498>
+Thread      : main thread f738b9c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/749/0/720954440
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : The user file-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/os_svr4_getKey/os_sharedmem_seg.c/334/1/136052936
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : The shared-memory-creation mask (0002) set for the service specifies
+              exclusive read or write access for at least one of the access catagories.
+              Read and write access should always be paired,
+              both prohibit or granted for each access catagory.
+              Therefore the service has set the user access permissions
+              for the shared memory segment associated to this domain to (0006).
+Domain      : "MirageIFSim"
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/os_svr4_sharedMemoryCreate/os_sharedmem_seg.c/529/1/136257290
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "MirageIFSim"
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/The OpenSplice domain service/u_domain.c/636/0/147292622
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Daemon: Locking not defined using default value disabled
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/lockPages/u_spliced.c/109/0/147457716
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Resend Manager for Participant 0x9949f88 started
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : resendManager b7003b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/148201259
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Lease Manager for Participant 0x9949f88 started
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : watchdog b775bb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/148311622
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Configuration> parameter service durability
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/148450316
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Arguments> parameter service durability
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/148502481
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/148531143
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/148556202
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/148580753
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <FailureAction> parameter service durability
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/148604716
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Configuration> parameter service networking
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/91/0/148641493
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Arguments> parameter service networking
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/127/0/148665531
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/188/0/148689282
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/233/0/148712763
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/289/0/148735920
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Taking default for <FailureAction> parameter service networking
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/sr_serviceInfo.c/352/0/148761840
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : The C&M Service thread is started.
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : OSPL C&M Command Manager b69ffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2045/0/149340401
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Started service durability with args "durability" "file:///home/salman/JSBSim_scripts/MirageIFSim.xml"
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/149476986
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Started service networking with args "networking" "file:///home/salman/JSBSim_scripts/MirageIFSim.xml"
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/404/0/149642565
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : service 'durability': Locking disabled
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : main thread b73fb6c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/152071699
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : service 'networking': Locking disabled
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : main thread b745c6c0
+Internals   : V5.5.1OSS/lockPages/u_service.c/128/0/152420006
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Lease Manager for Participant 0x9f680e8 started
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : watchdog b7751b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/152992334
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Resend Manager for Participant 0x9f680e8 started
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : resendManager b6ff9b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/153010470
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Lease Manager for Participant 0x84e4068 started
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : watchdog b77ccb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/63/0/153236233
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Resend Manager for Participant 0x84e4068 started
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : resendManager b705ab40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/93/0/153257810
+========================================================================================
+Report      : WARNING
+Date        : Mon Sep 30 15:17:12 2013
+Description : error calling getaddrinfo("eth0"): No address associated with hostname
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : main thread b745c6c0
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/140/0/409519770
+========================================================================================
+Report      : WARNING
+Date        : Mon Sep 30 15:17:12 2013
+Description : ignoring invalid networking address eth0
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : main thread b745c6c0
+Internals   : V5.5.1OSS/os_sockaddrStringToAddress/os_socket.c/166/0/409562980
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : my NodeId = 0x93183af
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : main thread b745c6c0
+Internals   : V5.5.1OSS/networking: nw_controllerInitialize/nw_controller.c/786/0/412085268
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:12 2013
+Description : Durability identification is: 144184842
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : main thread b73fb6c0
+Internals   : V5.5.1OSS/DurabilityService/d_durability.c/459/0/869052269
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:17:18 2013
+Description : Persistence not enabled!
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : main thread b73fb6c0
+Internals   : V5.5.1OSS/DurabilityService/d_groupLocalListener.c/2796/0/873187440
+========================================================================================
+Report      : WARNING
+Date        : Mon Sep 30 15:20:59 2013
+Description : Caught termination request: 0. Please use 'ospl stop' for termination.
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : groupLocalListenerActionQueue b67ffb40
+Internals   : V5.5.1OSS/serviceTermHandler/u_service.c/54/0/226238013
+========================================================================================
+Report      : WARNING
+Date        : Mon Sep 30 15:20:59 2013
+Description : Caught termination request: 0. Please use 'ospl stop' for termination.
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : b745bb40
+Internals   : V5.5.1OSS/serviceTermHandler/u_service.c/54/0/226306170
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:00 2013
+Description : Resend Manager for Participant 0x84e4068 stopped
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : resendManager b705ab40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/735620836
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:00 2013
+Description : Lease Manager for Participant 0x84e4068 stopped
+Node        : salman-desktop
+Process     : networking <11376>
+Thread      : watchdog b77ccb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/735627806
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:02 2013
+Description : Lease Manager for Participant 0x9f680e8 stopped
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : watchdog b7751b40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/939001344
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:02 2013
+Description : Resend Manager for Participant 0x9f680e8 stopped
+Node        : salman-desktop
+Process     : durability <11375>
+Thread      : resendManager b6ff9b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/939002364
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:03 2013
+Description : The C&M Service thread is notified to terminate.
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/v_splicedCAndMCommandDispatcherQuit/v_spliced.c/2010/0/961712711
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:03 2013
+Description : The C&M Service thread is stopped.
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : OSPL C&M Command Manager b69ffb40
+Internals   : V5.5.1OSS/v_splicedBuiltinCAndMCommandDispatcher/v_spliced.c/2062/0/961862948
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:03 2013
+Description : Lease Manager for Participant 0x9949f88 stopped
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : watchdog b775bb40
+Internals   : V5.5.1OSS/u_participant::leaseManagerMain/u_participant.c/68/0/961881228
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:03 2013
+Description : Resend Manager for Participant 0x9949f88 stopped
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : resendManager b7003b40
+Internals   : V5.5.1OSS/u_participant::resendManagerMain/u_participant.c/98/0/961878000
+========================================================================================
+Report      : INFO
+Date        : Mon Sep 30 15:21:03 2013
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : salman-desktop
+Process     : spliced <11365>
+Thread      : main thread b74056c0
+Internals   : V5.5.1OSS/OpenSplice domain service/spliced.c/749/0/965883002

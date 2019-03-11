@@ -1,0 +1,485 @@
+/*
+ * TimedProcessing.c
+ * 
+ * This example plugin demonstrates how to use the timed processing callbacks
+ * to continuously record sim data to disk.
+ * 
+ * This technique can be used to record data to disk or to the network.  Unlike
+ * UDP data output, we can increase our frequency to capture data every single
+ * sim frame.  (This example records once per second.)
+ * 
+ * Use the timed processing APIs to do any periodic or asynchronous action in
+ * your plugin.
+ * 
+ */
+
+#if APL
+#if defined(__MACH__)
+#include <Carbon/Carbon.h>
+#endif
+#endif
+
+//#if _WIN32
+//#include <winsock2.h>
+//#include <windows.h>
+//#else
+////header files for socket programming
+//#include <unistd.h>
+//#include <sys/socket.h>
+//#include <netinet/in.h>
+//#include <netdb.h>
+//#include <errno.h>
+//#include <sys/ioctl.h>
+//#include <arpa/inet.h>
+//#include <fcntl.h>
+//#endif
+
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <iostream>
+#include "XPLMProcessing.h"
+#include "XPLMDataAccess.h"
+#include "XPLMUtilities.h"
+#include "XPLMGraphics.h"
+#include "XPLMPlugin.h"
+#include "XPStandardWidgets.h"
+#include "XPWidgets.h"
+#include "XPWidgetDefs.h"
+#include "XPUIGraphics.h"
+#include "XPWidgetUtils.h"
+//#include "XPWidgetsEx.h"
+#include "XPLMMenus.h"
+#include "XPLMUtilities.h"
+
+
+#include "JSBSim.h"
+#include "DDSInterface.h"
+JSBSim::DDSInterface dds;
+
+
+int MenuItem1;
+XPLMMenuID	id;
+
+int port=2000;
+
+XPWidgetID TestWidgetsWidget, TestWidgetsWindow;
+XPWidgetID PopupInputTextEdit;
+
+using namespace std;
+using std::cout;
+using std::endl;
+//
+//static const int endianTest = 1;
+//#define isLittleEndian (*((char *) &endianTest ) != 0)
+//
+//// Routine to correct the endiness
+//
+//// Double version
+//static void htond (double &x)
+//{
+//    if ( isLittleEndian ) {
+//        int    *Double_Overlay;
+//        int     Holding_Buffer;
+//
+//        Double_Overlay = (int *) &x;
+//        Holding_Buffer = Double_Overlay [0];
+//
+//        Double_Overlay [0] = htonl (Double_Overlay [1]);
+//        Double_Overlay [1] = htonl (Holding_Buffer);
+//    } else {
+//        return;
+//    }
+//}
+//
+//// Float version
+//static void htonf (float &x)
+//{
+//    if ( isLittleEndian ) {
+//        int    *Float_Overlay;
+//        int     Holding_Buffer;
+//
+//        Float_Overlay = (int *) &x;
+//        Holding_Buffer = Float_Overlay [0];
+//
+//        Float_Overlay [0] = htonl (Holding_Buffer);
+//    } else {
+//        return;
+//    }
+//}
+//
+//
+
+
+
+//X-Plane format for position data
+//
+//#pragma pack(push,2)
+//class XPNetFDM{
+//public:
+//	int p; // this is the plane you wish to control.. 0 for your plane, but you can enter up to 9 here
+//	double lat_lon_ele[3];
+//	float psi_the_phi[3];
+//	float gear_flap_vect[3];
+//	float timeofday;
+//	int date;
+//	float speed;
+//};
+//#pragma pack(pop)
+//
+//
+//
+//
+//XPNetFDM fdm;
+
+
+
+/* Data refs we will record. */
+XPLMDataRef		gPlanelocal_x;
+XPLMDataRef		gPlanelocal_y;
+XPLMDataRef		gPlanelocal_z;
+XPLMDataRef		gPlanelocal_theta;
+XPLMDataRef		gPlanelocal_phi;
+XPLMDataRef		gPlanelocal_psi;
+XPLMDataRef		gFlightModel_gear;
+XPLMDataRef		gFlightModel_flap;
+XPLMDataRef		gFlightModel_thrust;
+XPLMDataRef		gFlight_time;
+XPLMDataRef		gFlight_date;
+XPLMDataRef		gFlightModel_speed;
+XPLMDataRef		gFlight_zulutime;
+XPLMDataRef		gPhyOFF;
+XPLMDataRef		gHUDON;
+
+#if APL && __MACH__
+int ConvertPath(const char * inPath, char * outPath, int outPathMaxLen);
+#endif
+
+//int sckt;
+//struct sockaddr_in scktName;
+
+////connection to JSBSim Socket
+//void JSBSimUDPSocket(int port)
+//{
+//  int size = 0;
+//  bool connected = false;
+//  unsigned long NoBlock = true;
+//
+//  #if defined(_MSC_VER) || defined(__MINGW32__)
+//    WSADATA wsaData;
+//    int wsaReturnCode;
+//    wsaReturnCode = WSAStartup(MAKEWORD(1,1), &wsaData);
+//    if (wsaReturnCode == 0) cout << "Winsock DLL loaded ..." << endl;
+//    else cerr << "Winsock DLL not initialized ..." << endl;
+//  #endif
+//	unsigned long NonBlocking = 1;
+//	unsigned long *p = &NonBlocking;
+//	sckt = socket(AF_INET, SOCK_DGRAM, 0);
+//#ifdef _WIN32
+//	ioctlsocket(sckt,FIONBIO, p);
+//#else
+//	fcntl(sckt,F_SETFL,O_NONBLOCK);
+//#endif
+//
+//  if (sckt >= 0) {  // successful
+//    memset(&scktName, 0, sizeof(struct sockaddr_in));
+//    scktName.sin_family = AF_INET;
+//    scktName.sin_port = htons(port);
+//    scktName.sin_addr.s_addr = htonl(INADDR_ANY);
+//    int len = sizeof(struct sockaddr_in);
+//    if (bind(sckt, (struct sockaddr*)&scktName, len) == 0) {   // successful
+//      cout << "Successfully bound to socket for input on port " << port << endl;
+//      connected = true;
+//    } else {                // unsuccessful
+//      cout << "Could not bind to socket for input ..." << endl;
+//    }
+//  } else {          // unsuccessful
+//    cout << "Could not create socket for FDM input, error = " << endl;
+//  }
+//
+//}
+//
+////Recieve from JSBSim
+//int JSBSimUDPReceive(char *buf)
+//{
+//
+//  struct sockaddr_in si_other;
+//  int len = sizeof(struct sockaddr_in);
+//  int num_chars=0;
+//  int total_chars = 0;
+//  unsigned long NoBlock = true;
+//
+//
+//  if (sckt > 0) {
+//	num_chars = recvfrom(sckt, buf, 1024, 0, (sockaddr *)&si_other,(socklen_t *)&len);
+//	if( num_chars == 0  ) {
+//      		cout<<"error transmission";
+//      		return 0;
+//   	}
+//	//cout<<"no of chars recieve"<<num_chars<<endl;
+//
+//
+//
+//#if defined(_MSC_VER)
+//    // when nothing received and the error isn't "would block"
+//    // then assume that the client has closed the socket.
+//    if (num_chars == 0) {
+//        DWORD err = WSAGetLastError ();
+//        if (err != WSAEWOULDBLOCK) {
+//            printf ("Socket Closed. back to listening\n");
+//            closesocket (sckt);
+//            sckt = -1;
+//        }
+//    }
+//#endif
+//  }
+//
+//  return num_chars;
+//}
+//
+//
+void DisableNativeFDM();
+void  JSBSimMenuHandler (void *, void *);
+int	JSBSimMenuEventHandler(
+						XPWidgetMessage			inMessage,
+						XPWidgetID				inWidget,
+						long					inParam1,
+						long					inParam2);
+
+
+
+float	MyFlightLoopCallback(
+                                   float                inElapsedSinceLastCall,    
+                                   float                inElapsedTimeSinceLastFlightLoop,    
+                                   int                  inCounter,    
+                                   void *               inRefcon);    
+
+
+PLUGIN_API int XPluginStart(
+						char *		outName,
+						char *		outSig,
+						char *		outDesc)
+{	
+	
+	int item;
+
+//	JSBSimUDPSocket(port);	//fixed port to listen
+	
+	strcpy(outName, "JSBSim Plugin");
+	strcpy(outSig, "xplanesdk.plugin.jsbsim");
+	strcpy(outDesc, "Plugin that integrate X-Plane with JSBSim");
+
+	//printf("hello world!\n");
+	// Build menu
+	item = XPLMAppendMenuItem(XPLMFindPluginsMenu(), "JSBSim Plugin", NULL, 1);
+
+	id = XPLMCreateMenu("JSBSim Plugin", XPLMFindPluginsMenu(), item, JSBSimMenuHandler, NULL);
+	XPLMAppendMenuItem(id, "Configure Socket", (void *)"socket", 1);
+
+	// Used by widget to make sure only one widgets instance created
+	MenuItem1 = 0;
+
+	/* Find the data refs we want to record. */
+	gPlanelocal_x = XPLMFindDataRef("sim/flightmodel/position/local_x");
+	gPlanelocal_y = XPLMFindDataRef("sim/flightmodel/position/local_y");
+	gPlanelocal_z = XPLMFindDataRef("sim/flightmodel/position/local_z");
+	gPlanelocal_theta = XPLMFindDataRef("sim/flightmodel/position/theta");
+	gPlanelocal_phi = XPLMFindDataRef("sim/flightmodel/position/phi");
+	gPlanelocal_psi = XPLMFindDataRef("sim/flightmodel/position/psi");
+	gFlightModel_gear=XPLMFindDataRef("sim/flightmodel2/gear/deploy_ratio");
+	gFlightModel_flap=XPLMFindDataRef("sim/flightmodel2/controls/flap_handle_deploy_ratio");
+	gFlightModel_thrust=XPLMFindDataRef("sim/flightmodel2/controls/thrust_vector_ratio");
+	gFlight_time = XPLMFindDataRef("sim/time/local_time_sec");
+	gFlight_zulutime = XPLMFindDataRef("sim/time/zulu_time_sec");
+	gFlight_date = XPLMFindDataRef("sim/time/local_date_days");
+	gFlightModel_speed = XPLMFindDataRef("sim/flightmodel/position/indicated_airspeed");
+	gPhyOFF	= XPLMFindDataRef("sim/operation/override/override_planepath");
+	
+
+	/* Register our callback for once a second.  Positive intervals
+	 * are in seconds, negative are the negative of sim frames.  Zero
+	 * registers but does not schedule a callback for time. */
+	XPLMRegisterFlightLoopCallback(		
+			MyFlightLoopCallback,	/* Callback */
+			-1,					/* Interval */
+			NULL);					/* refcon not used. */
+			
+	DisableNativeFDM();
+	return 1;
+}
+
+PLUGIN_API void	XPluginStop(void)
+{
+	/* Unregister the callback */
+	//XPLMUnregisterFlightLoopCallback(MyFlightLoopCallback, NULL);
+	
+	/* Close the file */
+	//fclose(fptr);
+
+	/* Unregister the callback */
+	int IntVals[8]; 
+	memset(IntVals, 0, sizeof(IntVals)); 
+	IntVals[0] = 0; 
+	XPLMSetDatavi(gPhyOFF, IntVals, 0, 8); 
+	XPLMUnregisterFlightLoopCallback(MyFlightLoopCallback, NULL);
+	
+	XPLMDestroyMenu(id);
+	if (MenuItem1 == 1)
+	{
+		XPDestroyWidget(TestWidgetsWidget, 1);
+		MenuItem1 = 0;
+	}
+
+	
+	/* Close the file */
+	//fclose(fptr);
+
+}
+
+PLUGIN_API void XPluginDisable(void)
+{
+	/* Flush the file when we are disabled.  This is convenient; you 
+	 * can disable the plugin and then look at the output on disk. */
+	//fflush(fptr);
+
+	/* Flush the file when we are disabled.  This is convenient; you 
+	 * can disable the plugin and then look at the output on disk. */
+	//fflush(fptr);
+	int IntVals[8]; 
+	memset(IntVals, 0, sizeof(IntVals)); 
+	IntVals[0] = 0; 
+	XPLMSetDatavi(gPhyOFF, IntVals, 0, 8);
+	XPLMUnregisterFlightLoopCallback(MyFlightLoopCallback, NULL);
+
+}
+
+PLUGIN_API int XPluginEnable(void)
+{
+	//int IntVals[8]; 
+	//memset(IntVals, 0, sizeof(IntVals)); 
+	//IntVals[0] = 1; 	
+	//XPLMSetDatavi(gPhyOFF, IntVals, 0, 8);
+	//XPLMRegisterFlightLoopCallback(		
+	//		MyFlightLoopCallback,	/* Callback */
+	//		-1,					/* Interval */
+	//		NULL);					/* refcon not used. */
+	return 1;
+
+}
+
+PLUGIN_API void XPluginReceiveMessage(
+					XPLMPluginID	inFromWho,
+					long			inMessage,
+					void *			inParam)
+{
+}
+
+void DisableNativeFDM(){
+
+	int IntVals[8]; 
+	memset(IntVals, 0, sizeof(IntVals)); 
+	IntVals[0] = 1; 	
+	XPLMSetDatavi(gPhyOFF, IntVals, 0, 8);
+}
+
+void CreateTestWidgets(int x, int y, int w, int h)
+{
+	int x2 = x + w;
+	int y2 = y - h;
+
+	TestWidgetsWidget = XPCreateWidget(x, y, x2, y2,
+					1,	// Visible
+					"JSBSim Plugin (configure socket)",	// desc
+					1,		// root
+					NULL,	// no container
+					xpWidgetClass_MainWindow);
+
+	XPSetWidgetProperty(TestWidgetsWidget, xpProperty_MainWindowHasCloseBoxes, 1);
+
+	TestWidgetsWindow = XPCreateWidget(x+5, y-20, x2-5, y2+5,
+						1,	// Visible
+						"Port",	// desc
+						0,		// root
+						TestWidgetsWidget,
+						xpWidgetClass_SubWindow);
+
+	XPSetWidgetProperty(TestWidgetsWindow, xpProperty_SubWindowType, xpSubWindowStyle_SubWindow);
+
+
+	PopupInputTextEdit = XPCreateWidget(x+80, y-30, x2-10, y-132,
+								1, "2000", 0, TestWidgetsWidget,
+									xpWidgetClass_TextField);
+
+	XPSetWidgetProperty(PopupInputTextEdit, xpProperty_TextFieldType, xpTextEntryField);
+}
+
+void  JSBSimMenuHandler(void * mRef, void * iRef)
+{
+	if (!strcmp((char *) iRef, "socket"))
+	{
+		if (MenuItem1 == 0)
+		{
+			CreateTestWidgets(300, 400, 300, 100);
+			MenuItem1 = 1;
+		}
+		else
+			if(!XPIsWidgetVisible(TestWidgetsWidget))
+				XPShowWidget(TestWidgetsWidget);
+	}
+
+	XPAddWidgetCallback(TestWidgetsWidget, JSBSimMenuEventHandler);
+}		
+
+
+// Handle any widget messages
+int	JSBSimMenuEventHandler(
+						XPWidgetMessage			inMessage,
+						XPWidgetID				inWidget,
+						long					inParam1,
+						long					inParam2)
+{
+	char Buffer[10];
+
+	// Close button pressed, only hide the widget, rather than destropying it.
+	if (inMessage == xpMessage_CloseButtonPushed)
+	{
+		if (MenuItem1 == 1)
+		{
+			XPGetWidgetDescriptor(PopupInputTextEdit, Buffer, sizeof(Buffer));
+//			port = atoi(Buffer);
+//			JSBSimUDPSocket(port);
+			XPHideWidget(TestWidgetsWidget);
+		}
+		return 1;
+	}
+}
+
+
+
+
+float	MyFlightLoopCallback(
+                                   float                inElapsedSinceLastCall,    
+                                   float                inElapsedTimeSinceLastFlightLoop,    
+                                   int                  inCounter,    
+                                   void *               inRefcon)
+{
+	
+	double x,y,z;
+	double radtodeg = 180/3.141;
+	JSBSim::fdmdata jsbsim_fdm;
+	if(dds.Run(jsbsim_fdm)){
+		XPLMWorldToLocal(jsbsim_fdm.CurrentLatitude, jsbsim_fdm.CurrentLongitude, jsbsim_fdm.h_sl_ft*0.3048 , &x, &y, &z);
+		XPLMSetDatad(gPlanelocal_x, x);
+		XPLMSetDatad(gPlanelocal_y, y);
+		XPLMSetDatad(gPlanelocal_z, z);
+		XPLMSetDataf(gPlanelocal_psi, jsbsim_fdm.psi_rad*radtodeg);
+		XPLMSetDataf(gPlanelocal_theta, jsbsim_fdm.theta_rad*radtodeg);
+		XPLMSetDataf(gPlanelocal_phi, jsbsim_fdm.phi_rad*radtodeg);
+		XPLMSetDataf(gFlight_zulutime, jsbsim_fdm.LocalTimeInSeconds);
+	}
+
+	return -1.0;
+}                                   
+
+

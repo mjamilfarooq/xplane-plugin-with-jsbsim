@@ -1,0 +1,42 @@
+all: JSBSim2XPLANE
+
+clean: clean_JSBSim2XPLANE
+cpp_SRC_JSBSim2XPLANE+=JSBSim2XPLANE.cpp JSBSimDcps.cpp JSBSimSplDcps.cpp JSBSim.cpp JSBSimDcps_impl.cpp DDSInterface.cpp CheckStatus.cpp
+
+OBJS_JSBSim2XPLANE+=$(c_SRC_JSBSim2XPLANE:.c=.c.o)
+
+OBJS_JSBSim2XPLANE+=$(cpp_SRC_JSBSim2XPLANE:.cpp=.cpp.o)
+
+CFLAGS_JSBSim2XPLANE+= -I./\
+ -I../XPLANESDK/CHeaders/XPLM\
+ -I../XPLANESDK//CHeaders/Widgets/\
+ -I- -I/usr/include/\
+ -DIBM=0 -DAPL=0 -DLIN=1 -m32
+
+DBG=-g
+
+CFLAGS_JSBSim2XPLANE+=-O0 -x c++ -ansi
+
+LDFLAGS+=-L/home/salman/HDE/x86.linux2.6/lib
+
+clean_JSBSim2XPLANE:
+	rm -f ${OBJS_JSBSim2XPLANE}
+
+JSBSim2XPLANE:
+	$(MAKE) -f makefile JSBSim2XPLANE.xpl TARGET=JSBSim2XPLANE.xpl\
+	CC="g++"  LD="g++"  AR="ar -crs"  SIZE="size" LIBS+="-lGL -lGLU  -lddsos -lddsdatabase -ldcpssacpp -ldcpsgapi"
+ 
+JSBSim2XPLANE.xpl: ${OBJS_JSBSim2XPLANE}
+	${CC} -m32 -shared ${LDFLAGS} -o "/home/salman/X-Plane 9.00 Beta-11/Resources/plugins/JSBSim2XPLANE.xpl" ${OBJS_JSBSim2XPLANE} ${LIBS}
+
+
+
+%.cpp.o: %.cpp
+	${CC} -c -fPIC ${CFLAGS_JSBSim2XPLANE} $< -o $@ -MMD
+include $(cpp_SRC_JSBSim2XPLANE:.cpp=.d)
+
+%.d: %.cpp
+	set -e; $(CC) -M $(CFLAGS_JSBSim2XPLANE) $< \
+ | sed 's!\($(*F)\)\.o[ :]*!$(*D)/\1.o $@ : !g' > $@; \
+ [ -s $@ ] || rm -f $@
+

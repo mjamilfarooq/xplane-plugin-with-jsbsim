@@ -1,0 +1,112 @@
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:42:01 2013
+Description : sendto returned errno 101 (Network is unreachable)
+Node        : sim-paf-desktop
+Process     : networking <23438>
+Thread      : Discovery[@enabled!='false'] f6d4cb40
+Internals   : V5.5.1OSS/networking: sending data to the socket/nw_socket.c/1348/0/570865971
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No broadcast enabled interface found
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: retrieving broadcast interface/nw_socketBroadcast.c/131/0/305916024
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No networkinterface available
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: socketNew/nw_socket.c/901/0/305933609
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No broadcast enabled interface found
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: retrieving broadcast interface/nw_socketBroadcast.c/131/0/306248416
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No networkinterface available
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: socketNew/nw_socket.c/901/0/306258718
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No broadcast enabled interface found
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: retrieving broadcast interface/nw_socketBroadcast.c/131/0/306524135
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No networkinterface available
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: socketNew/nw_socket.c/901/0/306533962
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No broadcast enabled interface found
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: retrieving broadcast interface/nw_socketBroadcast.c/131/0/306823717
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No networkinterface available
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: socketNew/nw_socket.c/901/0/306832995
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No broadcast enabled interface found
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: retrieving broadcast interface/nw_socketBroadcast.c/131/0/307055111
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No networkinterface available
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: socketNew/nw_socket.c/901/0/307064063
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No broadcast enabled interface found
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: retrieving broadcast interface/nw_socketBroadcast.c/131/0/307274199
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : No networkinterface available
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : main thread f743c6c0
+Internals   : V5.5.1OSS/networking: socketNew/nw_socket.c/901/0/307282903
+========================================================================================
+Report      : ERROR
+Date        : Thu May 30 16:43:55 2013
+Description : sendto returned errno 97 (Address family not supported by protocol)
+Node        : sim-paf-desktop
+Process     : networking <24509>
+Thread      : Channels/Channel[@name='Reliable'] f6ac3b40
+Internals   : V5.5.1OSS/networking: sending data to the socket/nw_socket.c/1348/0/315137111
